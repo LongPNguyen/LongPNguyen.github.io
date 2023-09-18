@@ -3,7 +3,7 @@ import {Header, Body, Footer} from './components/main';
 import Showcase from './components/projects';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
-import "antd/dist/antd.css";
+import "antd/dist/reset.css";
 import './App.css';
 
 const styles = {
@@ -20,7 +20,6 @@ const styles = {
 }
 class App extends Component {
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         <header className="App-header">
@@ -29,8 +28,7 @@ class App extends Component {
         </header>
         <div id='projects' className="App-projects" style={styles.container}>
           <ScrollAnimation animateIn='fadeInUp'>
-          <h1 className="projectsTitle" style={styles.fadeInUp}>Freelance Projects for Clients</h1>
-          <Showcase />
+          <Showcase styles={styles} />
           </ScrollAnimation>         
         </div>
         <footer className="App-footer">

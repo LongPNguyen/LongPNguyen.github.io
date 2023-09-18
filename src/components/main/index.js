@@ -27,14 +27,14 @@ class Body extends React.Component {
         return (
             <div className='bod'>
             <p>Hi, I'm <strong onMouseOver={() => this.setState({fade: true})} onMouseLeave={() => this.setState({fade: false})} className={nameFade}>Long Nguyen</strong></p>
-            <p>And I'm a Front End Developer</p>
+            <p>And I'm a Software Engineer</p>
             <button
                 onClick = {this.OnLinkClick}
                 onMouseOver={() => this.setState({hover: true})} 
                 onMouseLeave={() => this.setState({hover: false})} 
                 className='aboutBt btn btn-outline-primary btn-sm'
             >
-                Check Out My Work <i className={icon}></i>
+                Discover more <i className={icon}></i>
             </button>
             </div>
         )
@@ -46,9 +46,7 @@ const Footer = (props) => (
             <Col span={12} style={{padding:'1em'}}>
                 <h3 style={{color:'white', opacity:'0.8'}}>About</h3>
                     <p style={{fontSize:'15px'}}>
-                        I'm a front-end developer with a passion for
-                        creating visually appealing designs with a simplistic
-                        yet functional user experience.
+                    Hello! I'm Long Nguyen, a Software Engineer with a strong focus on web development, particularly in CMS frameworks like WordPress. My journey from internships to key engineering roles showcases my adaptability and drive. Notably, I've crafted solutions, like a revenue-driving algorithm, that have left significant impacts. My expertise spans a broad spectrum, from JavaScript and ReactJS to MongoDB and agile methodologies.
                     </p>
             </Col>
             <Col span={12}style={{padding:'1em'}}>
