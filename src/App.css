@@ -97,6 +97,7 @@ a {
 .social {
   margin: 1vh;
   color: #cdd9f5;
+  font-size: 2em;
 }
 
 .social:hover {
