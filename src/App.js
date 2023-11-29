@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Header, Body, Footer} from './components/main';
 import Showcase from './components/projects';
+import ReposList from './components/githubrepos';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import "antd/dist/reset.css";
@@ -16,6 +17,7 @@ const styles = {
     color: 'black',
     display: 'flex',
     justifyContent: 'center',
+    overflowX: 'hidden',
   }
 }
 class App extends Component {
@@ -29,6 +31,7 @@ class App extends Component {
         <div id='projects' className="App-projects" style={styles.container}>
           <ScrollAnimation animateIn='fadeInUp'>
           <Showcase styles={styles} />
+          <ReposList styles={styles} />
           </ScrollAnimation>         
         </div>
         <footer className="App-footer">
