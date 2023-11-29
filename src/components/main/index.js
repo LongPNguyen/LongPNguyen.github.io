@@ -43,13 +43,13 @@ class Body extends React.Component {
 
 const Footer = (props) => (
         <Row className='foot' style={{width:'100%'}}>
-            <Col span={12} style={{padding:'1em'}}>
+            <Col xs={24} sm={12} style={{padding:'1em'}}>
                 <h3 style={{color:'white', opacity:'0.8'}}>About</h3>
                     <p style={{fontSize:'15px'}}>
                     Hello! I'm Long Nguyen, a Software Engineer with a strong focus on web development, particularly in CMS frameworks like WordPress. My journey from internships to key engineering roles showcases my adaptability and drive. Notably, I've crafted solutions, like a revenue-driving algorithm, that have left significant impacts. My expertise spans a broad spectrum, from JavaScript and ReactJS to MongoDB and agile methodologies.
                     </p>
             </Col>
-            <Col span={12}style={{padding:'1em'}}>
+            <Col xs={24} sm={12} style={{padding:'1em'}}>
                 <h3 style={{color:'white', opacity:'0.8'}}>Connect with me!</h3>
                 <a href="https://www.linkedin.com/in/long-nguyen-a3b6326a"><i className="fab fa-linkedin social"></i></a>
                 <a href="https://github.com/LongPNguyen"><i className="fab fa-github-square social"></i></a>
